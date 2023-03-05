@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AutomaticMovement"
+             x:Class="AutomaticMovement.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Simulación del sensor de aceleración"
+                   FontSize="20"
+                   HorizontalOptions="Center"/>
+
+            <Label x:Name="XLabel"
+                   Text="X: "
+                   FontSize="16"
+                   HorizontalOptions="Center"/>
+
+            <Label x:Name="YLabel"
+                   Text="Y: "
+                   FontSize="16"
+                   HorizontalOptions="Center"/>
+
+            <Label x:Name="ZLabel"
+                   Text="Z: "
+                   FontSize="16"
+                   HorizontalOptions="Center"/>
+
+            <Label x:Name="StepLabel"
+                   Text="Steps: "
+                   FontSize="16"
+                   HorizontalOptions="Center"/>
+
+
+            <Button x:Name="StartButton"
+                    Text="Iniciar"
+                    HorizontalOptions="Center"
+                    Margin="0,20"
+                    Clicked="StartButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
